@@ -1,0 +1,146 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap'); */
+@font-face {
+    font-family: 'Norse';
+    src: url(./Norse-Bold.otf);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    font-family: 'Press Start 2P', Arial, Helvetica, sans-serif;
+    --btn-colour: #685595;
+    /* --font-colour: hsl(0, 0%, 96.5%); */
+    --font-colour: black;}
+
+#main-container {
+    display: flex;
+}
+
+.background {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.25);
+    padding: 8px;
+}
+
+.img-sidebar {
+    height: 100vh;
+    width: 40vw;
+    background: url(./simone-hutsch-img.jpg) no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    /* padding-bottom: 8px; */
+}
+
+.background-credit, a, a:visited {
+    color: white;
+    text-align: center;
+
+}
+
+.logo-wrapper {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 100px;
+    gap: 8px;
+}
+
+.logo {
+    font-family: 'Norse', sans-serif;
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: -0.13em;
+    padding: 30px 0;
+}
+
+.logo-wrapper > img {
+    width: 50px;
+    height: auto;
+}
+
+.main-section {
+    background-color: hsl(0, 0%, 96.5%);
+    display: flex;
+    flex-basis: 60vw;
+    flex-direction: column;
+    align-items: start;
+    font-size: 2rem;
+
+}
+
+.text {
+    font-size: 1.8rem;
+    color: var(--font-colour);
+    width: 750px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin: 150px 50px 60px;
+}
+
+#sign-up-form {
+    width: 100%;
+    
+}
+
+.form-fields {
+    width: 100%;
+    background-color: white;
+    box-shadow: 0px 12px 6px rgba(0, 0, 0, 0.2);
+    padding: 24px 64px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+}
+
+.form-heading {
+    font-size: 1.3rem;
+    margin-bottom: 8px;
+}
+
+.row {
+    font-size: 0.65rem;
+    display: flex;
+    gap: 64px;
+    letter-spacing: 2px;
+}
+
+.input-field {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    width: 250px;
+    line-height: 24px;
+}
+
+.submit {
+    font-size: 18px;
+    padding: 8px 24px;
+    border-radius: 12px;
+    border: 2px solid var(--btn-colour);
+    background-color: var(--btn-colour);
+    color: white;
+    margin: 48px;
+}
+
+.sign-in-prompt {
+    margin: 0 48px;
+}
+
+.sign-in-prompt > a,
+.sign-in-prompt:visited {
+    color: var(--btn-colour);
+}
