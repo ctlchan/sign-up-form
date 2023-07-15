@@ -105,7 +105,7 @@
 }
 
 .form-heading {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     margin-bottom: 8px;
 }
 
@@ -113,7 +113,8 @@
     font-size: 0.65rem;
     display: flex;
     gap: 64px;
-    letter-spacing: 2px;
+    letter-spacing: 2.4px;
+    text-transform: uppercase;
 }
 
 .input-field {
@@ -122,19 +123,41 @@
 }
 
 input {
+    border: 2px solid #E5E7EB;
     width: 250px;
     line-height: 24px;
+    padding:2px 4px;
+    font-size: 1.2rem;
+}
+
+input:focus {
+    border: 3px var(--btn-colour) solid;
+    /* border: none; */
+    outline: none;
+    box-shadow: 0 4px 8px var(--btn-colour);
+}
+
+.invalid {
+    border: 2px red solid;
 }
 
 .submit {
-    font-size: 18px;
-    padding: 8px 24px;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 12px 36px;
     border-radius: 12px;
     border: 2px solid var(--btn-colour);
     background-color: var(--btn-colour);
     color: white;
     margin: 48px;
+    transition: 0.3s all;
 }
+
+.submit:hover {
+    background-color: transparent;
+    color: var(--btn-colour)
+}
+
 
 .sign-in-prompt {
     margin: 0 48px;
