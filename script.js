@@ -10,6 +10,8 @@ let validate = (e) => {
     let passwords = [];
 
 
+    e.preventDefault();
+
     // Display error message where applicable
     inputs.forEach( (input) => {
         
