@@ -3,6 +3,8 @@ const EMAIL_REGEX = /^[\w-\.]+a([\w-]+\.)+[\w-]{2,4}$/
 const PHONE_REGEX = /[0-9]{3}-[0-9]{3}-[0-9]{4}/
 
 // FUNCTIONS
+
+// Perform form validation and update UI accordingly
 let validate = (e) => {
     let inputs = document.querySelectorAll("input");
     let passwords = [];
