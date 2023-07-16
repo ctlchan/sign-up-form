@@ -110,9 +110,14 @@
 }
 
 .row {
-    font-size: 0.65rem;
+    
     display: flex;
     gap: 64px;
+    
+}
+
+label:first-child {
+    font-size: 0.65rem;
     letter-spacing: 2.4px;
     text-transform: uppercase;
 }
@@ -132,13 +137,19 @@ input {
 
 input:focus {
     border: 3px var(--btn-colour) solid;
-    /* border: none; */
     outline: none;
     box-shadow: 0 4px 8px var(--btn-colour);
 }
 
 .invalid {
     border: 2px red solid;
+}
+
+.error-message {
+    color: red;
+    font-size: 1rem;
+    padding: 1px 0;
+    visibility: hidden;
 }
 
 .submit {
@@ -156,6 +167,10 @@ input:focus {
 .submit:hover {
     background-color: transparent;
     color: var(--btn-colour)
+}
+
+.submit:active {
+    padding: 13px 37px;
 }
 
 
