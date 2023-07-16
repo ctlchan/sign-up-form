@@ -1,5 +1,5 @@
 // CONSTANTS
-const EMAIL_REGEX = /^[\w-\.]+a([\w-]+\.)+[\w-]{2,4}$/
+const EMAIL_REGEX = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/
 const PHONE_REGEX = /[0-9]{3}-[0-9]{3}-[0-9]{4}/
 
 // FUNCTIONS
