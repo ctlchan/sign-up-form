@@ -12,7 +12,9 @@
 :root {
     font-family: 'Press Start 2P', Arial, Helvetica, sans-serif;
     --btn-colour: #685595;
-    --font-colour: black;}
+    --font-colour: black;
+    font-size: 14px;
+}
 
 #main-container {
     display: flex;
